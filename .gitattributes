@@ -1,2 +1,36 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Python files
+*.py text eol=lf
+
+# Jupyter notebooks
+*.ipynb text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Ignore log files from diff
+*.log diff=off
+
+# Treat shell scripts as text
+*.sh text eol=lf
+
+# Treat batch files as text
+*.bat text eol=crlf
+
+# Set UTF-8 encoding for all text files
+* text=auto working-tree-encoding=UTF-8
+
+
+## 📦 Requirements
+
+- Python 3.6 or above
+
+## ▶️ How to Run
+
+```bash
+python calendar_time_checker.py
